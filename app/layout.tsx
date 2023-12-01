@@ -43,7 +43,7 @@ export default function RootLayout({
     <html
       lang="en"
       className={`${inter.variable} ${nunito.variable} ${figtree.variable} ${youngSerif.variable}`}>
-      <body>{children}</body>
+      <body className="bg-[#F9F9F9]">{children}</body>
     </html>
   );
 }
