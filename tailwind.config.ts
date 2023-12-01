@@ -8,10 +8,14 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+      fontFamily: {
+        fig: ['var(--font-figtree)'],
+        inter: ['var(--font-inter)'],
+        nunito: ['var(--font-nunito)'],
+        young: ['var(--font-young_serif)'],
+
+
+
       },
     },
   },
