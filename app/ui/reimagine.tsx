@@ -16,7 +16,7 @@ const ReImagine = () => {
       </div>
 
       <div className="w-[90%]  flex justify-between mt-12 font-fig text-[#303031] text-base mb-10">
-        <div className="bg-white w-[30%] flex flex-col items-center p-4">
+        <div className="bg-white w-[30%] flex flex-col items-center p-4 shadow-[0_2px_8px_0_rgba(0,0,0,0.10)]">
           <div>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -52,7 +52,7 @@ const ReImagine = () => {
           </div>
         </div>
 
-        <div className="bg-white w-[30%] flex flex-col items-center p-4">
+        <div className="bg-white w-[30%] flex flex-col items-center p-4 shadow-[0_2px_8px_0_rgba(0,0,0,0.10)]">
           <div>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -98,7 +98,7 @@ const ReImagine = () => {
           </div>
         </div>
 
-        <div className="bg-white w-[30%] flex flex-col items-center p-4">
+        <div className="bg-white w-[30%] flex flex-col items-center p-4 shadow-[0_2px_8px_0_rgba(0,0,0,0.10)]">
           <div>
             <svg
               xmlns="http://www.w3.org/2000/svg"
