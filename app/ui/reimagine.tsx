@@ -3,7 +3,7 @@ const ReImagine = () => {
     <div className="w-full flex items-center flex-col">
       <div className="w-[90%]  flex justify-center">
         <div className="w-[70%]">
-          <h2 className="text-center font-young text-2xl text-[#303031]">
+          <h2 className="text-center font-young font-bold text-3xl text-[#303031]">
             Reimagining what it means to work
           </h2>
           <p className="text-center font-fig pt-5 text-[#66645E] text-base">
@@ -79,8 +79,8 @@ const ReImagine = () => {
                 />
                 <path d="M52 68L24.2872 20L79.7128 20L52 68Z" fill="#F3F0EA" />
                 <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
+                  fillRule="evenodd"
+                  clipRule="evenodd"
                   d="M38.1437 44L52.0001 68L65.8565 44L52.0001 20L38.1437 44Z"
                   fill="#71A894"
                 />

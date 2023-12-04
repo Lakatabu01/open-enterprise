@@ -13,6 +13,8 @@ const config: Config = {
         inter: ['var(--font-inter)'],
         nunito: ['var(--font-nunito)'],
         young: ['var(--font-young_serif)'],
+        space: ['var(--font-space_mono)'],
+
 
 
 

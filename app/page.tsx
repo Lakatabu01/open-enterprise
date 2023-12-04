@@ -3,6 +3,7 @@ import Header from "./ui/header";
 import Intro from "./ui/intro";
 import ReImagine from "./ui/reimagine";
 import Kickstart from "./ui/kickstart";
+import Onboard from "./ui/onboard";
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
       <Intro />
       <ReImagine />
       <Kickstart />
+      <Onboard />
     </main>
   );
 }

@@ -4,12 +4,21 @@ import "./globals.css";
 import { Figtree } from "next/font/google";
 import { Nunito } from "next/font/google";
 import { Young_Serif } from "next/font/google";
+import { Space_Mono } from "next/font/google";
 
 //Figtree font definition
 const figtree = Figtree({
   subsets: ["latin"],
   style: ["normal"],
   variable: "--font-figtree",
+});
+
+//Space_mono font definition
+const spaceMono = Space_Mono({
+  subsets: ["latin"],
+  style: ["normal"],
+  weight: ["700"],
+  variable: "--font-space_mono",
 });
 
 //Nunito font definition
@@ -25,6 +34,7 @@ const youngSerif = Young_Serif({
   weight: ["400"],
   subsets: ["latin"],
   variable: "--font-young_serif",
+  style: ["normal"],
 });
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
@@ -42,7 +52,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${inter.variable} ${nunito.variable} ${figtree.variable} ${youngSerif.variable}`}>
+      className={`${inter.variable} ${nunito.variable} ${figtree.variable} ${spaceMono.variable} ${youngSerif.variable}`}>
       <head>
         <link rel="icon" href="./favicon.ico" />
       </head>

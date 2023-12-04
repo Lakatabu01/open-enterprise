@@ -15,7 +15,7 @@ const Kickstart = () => {
               height="80"
               viewBox="0 0 80 80"
               fill="none">
-              <g clip-path="url(#clip0_39_6)">
+              <g clipPath="url(#clip0_39_6)">
                 <rect width="80" height="80" rx="40" fill="#F3F0EA" />
                 <circle cx="60" cy="40" r="28" fill="#66645E" />
                 <circle cx="60" cy="40" r="12" fill="#807E76" />
@@ -30,7 +30,7 @@ const Kickstart = () => {
             </svg>
           </div>
           <div>
-            <h2 className="font-young text-2xl text-[#303031] my-6">
+            <h2 className="font-bold font-young text-3xl text-[#303031] my-6">
               Kickstart an organization with your co-founders
             </h2>
           </div>
@@ -46,7 +46,7 @@ const Kickstart = () => {
 
         <div className="w-[35%] border-4 border-[#303031]  rounded-lg p-4 flex flex-col min-h-[20em] justify-between shadow-[15px_6px_0px_0px_rgba(113,168,148,1)]">
           <div>
-            <h2 className="mb-10 text-2xl tracking-tighter	font-bold font-nunito text-[#303031]">
+            <h2 className="mb-10 text-2xl tracking-tighter	font-bold font-space text-[#303031]">
               Members
             </h2>
           </div>
@@ -59,10 +59,10 @@ const Kickstart = () => {
               />
             </div>
             <div>
-              <p className="text-lg tracking-tighter font-semibold font-nunito text-[#303031]">
+              <p className="text-lg tracking-tighter font-semibold font-space text-[#303031]">
                 Dillon Kydd
               </p>
-              <p className="font-nunito text-[#66645E] text-base font-medium tracking-tight">
+              <p className="font-space text-[#66645E] text-base font-medium tracking-tight">
                 100 SHARES
               </p>
             </div>
@@ -76,10 +76,10 @@ const Kickstart = () => {
               />
             </div>
             <div>
-              <p className="text-lg tracking-tighter font-semibold font-nunito text-[#303031]">
+              <p className="text-lg tracking-tighter font-semibold font-space text-[#303031]">
                 Anna Olsen
               </p>
-              <p className="font-nunito text-[#66645E] text-base font-medium tracking-tight">
+              <p className="font-space text-[#66645E] text-base font-medium tracking-tight">
                 100 SHARES
               </p>
             </div>
@@ -93,10 +93,10 @@ const Kickstart = () => {
               />
             </div>
             <div>
-              <p className="text-lg tracking-tighter font-semibold font-nunito text-[#303031]">
+              <p className="text-lg tracking-tighter font-semibold font-space text-[#303031]">
                 Kas Moss
               </p>
-              <p className="font-nunito text-[#66645E] text-base font-medium tracking-tight">
+              <p className="font-space text-[#66645E] text-base font-medium tracking-tight">
                 100 SHARES
               </p>
             </div>
