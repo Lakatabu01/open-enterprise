@@ -5,7 +5,7 @@ const Onboard = () => {
   return (
     <section className="w-full flex justify-center ">
       <div className="w-[90%] py-20 flex justify-between items-center">
-        <div className="border-4 rounded-lg w-[40%] border-[#303031] p-4 font-space">
+        <div className="border-4 rounded-2xl w-[40%] border-[#303031] p-4 font-space">
           <div className="flex items-center mb-8 ">
             <div>
               <Image
