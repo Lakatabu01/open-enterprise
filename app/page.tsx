@@ -5,6 +5,7 @@ import ReImagine from "./ui/reimagine";
 import Kickstart from "./ui/kickstart";
 import Onboard from "./ui/onboard";
 import Engage from "./ui/engage";
+import Improve from "./ui/improve";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       <Kickstart />
       <Onboard />
       <Engage />
+      <Improve />
     </main>
   );
 }

@@ -6,8 +6,8 @@ import cover from "../assets/cover.png";
 
 const Engage = () => {
   return (
-    <section className="w-full flex justify-center  mt-20 ">
-      <div className="w-[90%] flex justify-between items-center">
+    <section className="w-full flex justify-center   mt-20 ">
+      <div className="w-[90%] flex justify-between mb-20 items-center">
         <div className="w-[45%] flex flex-col ">
           <div>
             <svg
