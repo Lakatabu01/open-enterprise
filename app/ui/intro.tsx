@@ -3,21 +3,26 @@ import picture from "../assets/Illustration.png";
 
 const Intro = () => {
   return (
-    <div className="pt-32 pl-28 flex items-center mb-20">
-      <div className="w-1/2">
-        <h1 className=" text-6xl font-bold font-young text-[#303031]">
+    <section className="pt-36 md:pl-28 px-3 md:px-0 flex md:flex-row flex-col items-center  mb-20">
+      <div className=" md:w-[40%] w-full">
+        <h1 className=" md:text-6xl text-2xl font-bold font-young text-[#303031]">
           A new model for open collaboration
         </h1>
-        <p className="font-fig pt-5 text-[#66645E] text-xl">
+        <p className="font-fig pt-5 text-[#66645E] md:text-xl text-lg">
           Run an organization where members get rewarded for their contributions
           with fractional ownership.
         </p>
-        <button className="bg-[#71A894] text-white text-lg py-2 px-4 mt-4 rounded-md">
-          Request early access
-        </button>
+
+        <div className="flex justify-center w-full md:justify-start mb-8 md:md-0 md:mt-5">
+          <button className="bg-[#71A894] text-white md:text-lg text-base md:py-2 py-1 md:px-4 px-2 md:mt-4 mt-8 rounded-md mx-auto md:mx-0">
+            Request early access
+          </button>
+        </div>
       </div>
-      <div className="relative">
+
+      <div className="relative md:w-[60%] w-full mt-4">
         <svg
+          className="w-full md:h-auto h-80"
           xmlns="http://www.w3.org/2000/svg"
           width="671"
           height="600"
@@ -29,14 +34,15 @@ const Intro = () => {
           />
         </svg>
         <Image
-          className="z-10 absolute top-2"
+          // stopped here
+          className="z-10 absolute md:top-2 top-[15%]"
           src={picture}
           width="800"
           height="900"
           alt=" Two cartoon characters doing a high five"
         />
       </div>
-    </div>
+    </section>
   );
 };
 

@@ -4,8 +4,8 @@ import Image from "next/image";
 const Onboard = () => {
   return (
     <section className="w-full flex justify-center ">
-      <div className="w-[90%] py-20 flex justify-between items-center">
-        <div className="border-4 rounded-2xl w-[40%] border-[#303031] p-4 font-space">
+      <div className="w-[90%] py-20 flex md:flex-row flex-col justify-between items-center">
+        <div className="border-4 rounded-2xl md:w-[40%] w-full border-[#303031] p-4 font-space">
           <div className="flex items-center mb-8 ">
             <div>
               <Image
@@ -53,7 +53,7 @@ const Onboard = () => {
           </button>
         </div>
 
-        <div className="w-[50%] flex flex-col ">
+        <div className="md:w-[50%] w-full flex flex-col mt-8 md:mt-0 ">
           <div>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -69,7 +69,7 @@ const Onboard = () => {
             </svg>
           </div>
           <div>
-            <h2 className="font-bold font-young text-3xl text-[#303031] my-10 mr-14">
+            <h2 className="font-bold font-young md:text-3xl text-2xl text-[#303031] md:my-10 my-4 md:mr-14">
               Onboard users, investors and advisors as you grow
             </h2>
           </div>

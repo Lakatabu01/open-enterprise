@@ -5,9 +5,9 @@ import picture3 from "../assets/Kas.png";
 
 const Kickstart = () => {
   return (
-    <section className="w-full flex justify-center my-20 ">
-      <div className="w-[90%] flex  items-center pt-10">
-        <div className="w-[45%]  p-4 font-fig text-[#303031] text-base mr-28  ">
+    <section className="w-full flex justify-center md:my-20 my-5">
+      <div className="w-[90%] flex md:flex-row flex-col items-center md:pt-10 pt-5">
+        <div className="md:w-[45%] w-full md:p-4  font-fig text-[#303031] text-base md:mr-28 pb-5 md:pb-0 ">
           <div>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -30,7 +30,7 @@ const Kickstart = () => {
             </svg>
           </div>
           <div>
-            <h2 className="font-bold font-young text-3xl text-[#303031] my-6">
+            <h2 className="font-bold font-young md:text-3xl text-2xl text-[#303031] md:my-6 my-4">
               Kickstart an organization with your co-founders
             </h2>
           </div>
@@ -44,16 +44,16 @@ const Kickstart = () => {
           </div>
         </div>
 
-        <div className="w-[35%] border-4 border-[#303031]  rounded-lg p-4 flex flex-col min-h-[20em] justify-between shadow-[15px_6px_0px_0px_rgba(113,168,148,1)]">
+        <div className="md:w-[35%] w-[100%] md:border-4 border-2 border-[#303031]  rounded-lg p-4 flex flex-col min-h-[20em] justify-between md:shadow-[15px_6px_0px_0px_rgba(113,168,148,1)] shadow-[10px_5px_0px_0px_rgba(113,168,148,1)]">
           <div>
-            <h2 className="mb-10 text-2xl tracking-tighter	font-bold font-space text-[#303031]">
+            <h2 className="mb-10 md:text-2xl text-lg md:tracking-tighter tracking-tight	font-bold font-space text-[#303031]">
               Members
             </h2>
           </div>
           <div className="flex items-center mb-8 ">
             <div>
               <Image
-                className="mr-4 rounded-[50%]"
+                className="md:mr-4 mr-2 rounded-[50%]"
                 src={picture1}
                 alt="image of Dillon"
               />

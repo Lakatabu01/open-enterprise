@@ -18,9 +18,9 @@ export default function Home() {
       <Kickstart />
       <Onboard />
       <Engage />
-      <Improve />
+      {/* <Improve />
       <Repeat />
-      <Footer />
+      <Footer /> */}
     </main>
   );
 }

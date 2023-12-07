@@ -2,11 +2,11 @@ const ReImagine = () => {
   return (
     <div className="w-full flex items-center flex-col">
       <div className="w-[90%]  flex justify-center">
-        <div className="w-[70%]">
-          <h2 className="text-center font-young font-bold text-3xl text-[#303031]">
+        <div className="md:w-[70%] w-full">
+          <h2 className="text-center font-young font-bold md:text-3xl text-2xl text-[#303031]">
             Reimagining what it means to work
           </h2>
-          <p className="text-center font-fig pt-5 text-[#66645E] text-base">
+          <p className="md:text-center font-fig pt-5 text-[#66645E] text-base">
             Teams and communities using Open Enterprise fundamentally unlock a
             reality of work that reimagines how people engage in economic
             opportunity, meeting the demands and expectations of a modern
@@ -15,8 +15,8 @@ const ReImagine = () => {
         </div>
       </div>
 
-      <div className="w-[90%]  flex justify-between mt-12 font-fig text-[#303031] text-base mb-10">
-        <div className="bg-white w-[30%] flex flex-col items-center p-4 shadow-[0_2px_8px_0_rgba(0,0,0,0.10)]">
+      <div className="w-[90%]  flex flex-col md:flex-row justify-between mt-12 font-fig text-[#303031] text-base mb-10">
+        <div className="bg-white md:w-[30%] mb-4 md:mb-0 w-full flex flex-col items-center p-4 shadow-[0_2px_8px_0_rgba(0,0,0,0.10)]">
           <div>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -52,7 +52,7 @@ const ReImagine = () => {
           </div>
         </div>
 
-        <div className="bg-white w-[30%] flex flex-col items-center p-4 shadow-[0_2px_8px_0_rgba(0,0,0,0.10)]">
+        <div className="bg-white md:w-[30%] mb-4 md:mb-0  w-full flex flex-col items-center p-4 shadow-[0_2px_8px_0_rgba(0,0,0,0.10)]">
           <div>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -98,7 +98,7 @@ const ReImagine = () => {
           </div>
         </div>
 
-        <div className="bg-white w-[30%] flex flex-col items-center p-4 shadow-[0_2px_8px_0_rgba(0,0,0,0.10)]">
+        <div className="bg-white md:w-[30%] mb-4 md:mb-0  w-full flex flex-col items-center p-4 shadow-[0_2px_8px_0_rgba(0,0,0,0.10)]">
           <div>
             <svg
               xmlns="http://www.w3.org/2000/svg"

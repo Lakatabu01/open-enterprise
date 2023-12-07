@@ -7,8 +7,8 @@ import cover from "../assets/cover.png";
 const Engage = () => {
   return (
     <section className="w-full flex justify-center   mt-20 ">
-      <div className="w-[90%] flex justify-between mb-20 items-center">
-        <div className="w-[45%] flex flex-col ">
+      <div className="w-[90%] flex justify-between flex-col md:flex-row mb-20 items-center">
+        <div className="md:w-[45%] w-full flex flex-col ">
           <div>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -37,7 +37,7 @@ const Engage = () => {
             </svg>
           </div>
           <div>
-            <h2 className="font-bold font-young text-3xl text-[#303031] my-10 mr-14">
+            <h2 className="font-bold font-young md:text-3xl text-2xl text-[#303031] my-10 md:mr-14">
               Engage highly committed contributors{" "}
             </h2>
           </div>
@@ -51,7 +51,7 @@ const Engage = () => {
           </div>
         </div>
 
-        <div className="w-[50%] border">
+        <div className="md:w-[50%] w-full border">
           <div className="w-[90%] border-4 rounded-2xl  border-[#303031] p-4 mx-auto shadow-[0px_6px_0px_0px_rgba(113,168,148,1)]">
             <div className="flex justify-between items-center mb-6">
               <h4 className="font-space text-[#303031] text-base font-medium tracking-tight">
@@ -68,7 +68,6 @@ const Engage = () => {
               </p>
             </div>
           </div>
-          {/* this */}
 
           <div className="flex">
             <div className="w-[60%] border-4 rounded-2xl  border-[#303031] p-5 mt-6 bg-[#F3F0EA]">
@@ -78,7 +77,6 @@ const Engage = () => {
                 </h2>
               </div>
 
-              {/* first */}
               <div className="flex items-center justify-between mb-8 ">
                 <div className="flex items-center  ">
                   <div>

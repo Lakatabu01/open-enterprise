@@ -1,9 +1,10 @@
 const Header = () => {
   return (
-    <header className="w-full flex justify-between px-12 fixed bg-white py-10 mb-28 z-20">
-      <div className="flex w-[35%]">
+    <header className="w-full flex justify-between  md:px-12 px-4 fixed bg-white md:py-10 py:6 md:mb-28 mb-16 z-20 ">
+      <div className="flex w-[35%] items-center ">
         <div>
           <svg
+            className="md:h-26 md:w-20 h-14 w-14 "
             xmlns="http://www.w3.org/2000/svg"
             width="68"
             height="41"
@@ -31,11 +32,16 @@ const Header = () => {
             </defs>
           </svg>
         </div>
-        <h2 className={"font-bold text-3xl pl-4 font-nunito text-[#303031]"}>
+        <h2
+          className={
+            "font-bold md:text-3xl md:pl-4 font-nunito text-[#303031] text-base pl-2"
+          }>
           Open Enterprise
         </h2>
       </div>
-      <nav className="font-fig w-[55%] text-xl flex justify-around text-[#303031]">
+
+      {/* Hide this nav on small screens */}
+      <nav className="font-fig w-[55%] text-xl md:flex hidden justify-around text-[#303031]">
         <button className="border-none bg-none">Why Open Enterprise</button>
         <button className="border-none bg-none">Features</button>
         <button className="border-none bg-none">Contribute</button>
@@ -43,6 +49,22 @@ const Header = () => {
           Request Early Access
         </button>
       </nav>
+
+      <button className="bg-transparent border-none md:hidden">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          className="w-6 h-6">
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            d="M3.75 9h16.5m-16.5 6.75h16.5"
+          />
+        </svg>
+      </button>
     </header>
   );
 };
