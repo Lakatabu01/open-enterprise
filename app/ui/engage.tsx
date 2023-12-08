@@ -6,7 +6,7 @@ import cover from "../assets/cover.png";
 
 const Engage = () => {
   return (
-    <section className="w-full flex justify-center   mt-20 ">
+    <section className="w-full flex justify-center   md:mt-20 mt:15 ">
       <div className="w-[90%] flex justify-between flex-col md:flex-row mb-20 items-center">
         <div className="md:w-[45%] w-full flex flex-col ">
           <div>
@@ -52,12 +52,12 @@ const Engage = () => {
         </div>
 
         <div className="md:w-[50%] w-full border">
-          <div className="w-[90%] border-4 rounded-2xl  border-[#303031] p-4 mx-auto shadow-[0px_6px_0px_0px_rgba(113,168,148,1)]">
-            <div className="flex justify-between items-center mb-6">
+          <div className="md:w-[90%] w-full border-4 rounded-2xl mt-8 md:mt-0 border-[#303031] p-4 mx-auto shadow-[0px_6px_0px_0px_rgba(113,168,148,1)]">
+            <div className="flex flex-wrap gap-2 justify-between items-center mb-6">
               <h4 className="font-space text-[#303031] text-base font-medium tracking-tight">
                 Write a how-to on Open Enterprise
               </h4>
-              <div className="bg-[#71A894] rounded-3xl font-space text-[#fff] text-base py-2 px-4 font-medium tracking-tight">
+              <div className="bg-[#71A894] md:rounded-3xl rounded-2xl font-space text-[#fff] md:text-base text-sm py-2 px-6 font-medium tracking-tight">
                 1 SHARE
               </div>
             </div>
@@ -69,8 +69,8 @@ const Engage = () => {
             </div>
           </div>
 
-          <div className="flex">
-            <div className="w-[60%] border-4 rounded-2xl  border-[#303031] p-5 mt-6 bg-[#F3F0EA]">
+          <div className="flex md:flex-row flex-col">
+            <div className="md:w-[60%] w-full border-4 rounded-2xl  border-[#303031] p-5 mt-6 bg-[#F3F0EA]">
               <div>
                 <h2 className="mb-10 text-2xl tracking-tighter	font-bold font-space text-[#303031]">
                   3 applicants
@@ -183,7 +183,7 @@ const Engage = () => {
               </div>
             </div>
 
-            <div className="w-[40%] border-4  flex flex-col items-center rounded-2xl ml-6 relative top-10 border-[#71A894] p-5  bg-[#fff]">
+            <div className="md:w-[40%] w-full border-4  flex flex-col items-center rounded-2xl md:ml-6 relative top-10 border-[#71A894] p-5  bg-[#fff]">
               <div>
                 <Image
                   className="mr-4 rounded-[50%]"

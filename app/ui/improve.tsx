@@ -2,8 +2,8 @@ const Improve = () => {
   return (
     <section className="w-full flex items-center flex-col mt-24">
       <div className="w-[90%]  flex justify-center">
-        <div className="w-[70%]">
-          <h2 className="text-center font-young font-bold text-3xl text-[#303031]">
+        <div className="md:w-[70%] w-full">
+          <h2 className="text-center font-young font-bold md:text-3xl text-2xl text-[#303031]">
             Help us improve Open Enterprise{" "}
           </h2>
           <p className="text-center font-fig pt-5 text-[#66645E] text-base">
@@ -15,8 +15,8 @@ const Improve = () => {
         </div>
       </div>
 
-      <div className="w-[90%]  flex justify-between mt-12 text-[#303031] text-base mb-10">
-        <div className="bg-white w-[30%] flex flex-col font-space justify-around p-4 shadow-[0_2px_8px_0_rgba(0,0,0,0.10)]">
+      <div className="w-[90%]  flex md:flex-row flex-col justify-between mt-12 text-[#303031] text-base mb-10">
+        <div className="bg-white md:w-[30%] w-full mb-4 md:mb-0 flex flex-col font-space justify-around p-4 shadow-[0_2px_8px_0_rgba(0,0,0,0.10)]">
           <div>
             <div>
               <p className="text-lg">
@@ -42,7 +42,7 @@ const Improve = () => {
           </div>
         </div>
 
-        <div className="bg-white w-[30%] flex flex-col font-space justify-around  p-4 shadow-[0_2px_8px_0_rgba(0,0,0,0.10)]">
+        <div className="bg-white md:w-[30%] w-full mb-4 md:mb-0  flex flex-col font-space justify-around  p-4 shadow-[0_2px_8px_0_rgba(0,0,0,0.10)]">
           <div>
             <div>
               <p className="text-lg">Update documentation with FAQs </p>
@@ -66,7 +66,7 @@ const Improve = () => {
           </div>
         </div>
 
-        <div className="bg-white w-[30%] flex flex-col font-space  justify-around   p-4 shadow-[0_2px_8px_0_rgba(0,0,0,0.10)]">
+        <div className="bg-white md:w-[30%] w-full flex flex-col font-space  justify-around   p-4 shadow-[0_2px_8px_0_rgba(0,0,0,0.10)]">
           <div>
             <div>
               <p className="text-lg pr-auto">Tutorial video series </p>
