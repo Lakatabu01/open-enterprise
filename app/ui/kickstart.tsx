@@ -1,11 +1,38 @@
+"use client";
+
 import Image from "next/image";
 import picture1 from "../assets/Dillon.png";
 import picture2 from "../assets/Anna.png";
 import picture3 from "../assets/Kas.png";
+import { useState, useRef, useEffect } from "react";
 
 const Kickstart = () => {
+  const [isVisible, setIsVisible] = useState(false);
+  const targetElementRef = useRef<HTMLDivElement | null>(null);
+
+  //Function that checks if element is visible to change state
+  //which inturn triggers style for transitioning
+  const handleScroll = () => {
+    if (targetElementRef.current) {
+      const elementRect = targetElementRef.current.getBoundingClientRect();
+      const elementTop = elementRect.top;
+      const windowHeight = window.innerHeight;
+      if (elementTop < windowHeight) {
+        setIsVisible(true);
+      }
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
   return (
-    <section className="w-full flex justify-center md:my-20 my-5">
+    <section
+      ref={targetElementRef}
+      className={`w-full flex justify-center md:my-20 my-5 ${
+        isVisible ? "animate-slide-in-left" : ""
+      }`}>
       <div className="w-[90%] flex md:flex-row flex-col items-center md:pt-10 pt-5">
         <div className="md:w-[45%] w-full md:p-4  font-fig text-[#303031] text-base md:mr-28 pb-5 md:pb-0 ">
           <div>

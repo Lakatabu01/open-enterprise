@@ -16,7 +16,9 @@ const ReImagine = () => {
       </div>
 
       <div className="w-[90%]  flex flex-col md:flex-row justify-between mt-12 font-fig text-[#303031] text-base mb-10">
-        <div className="bg-white md:w-[30%] mb-4 md:mb-0 w-full flex flex-col items-center p-4 shadow-[0_2px_8px_0_rgba(0,0,0,0.10)]">
+        <div
+          data-testid="modern-workforce"
+          className="bg-white md:w-[30%] mb-4 md:mb-0 w-full flex flex-col items-center p-4 shadow-[0_2px_8px_0_rgba(0,0,0,0.10)]">
           <div>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -52,7 +54,9 @@ const ReImagine = () => {
           </div>
         </div>
 
-        <div className="bg-white md:w-[30%] mb-4 md:mb-0  w-full flex flex-col items-center p-4 shadow-[0_2px_8px_0_rgba(0,0,0,0.10)]">
+        <div
+          data-testid="meritocratic-by-design"
+          className="bg-white md:w-[30%] mb-4 md:mb-0  w-full flex flex-col items-center p-4 shadow-[0_2px_8px_0_rgba(0,0,0,0.10)]">
           <div>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -98,7 +102,9 @@ const ReImagine = () => {
           </div>
         </div>
 
-        <div className="bg-white md:w-[30%] mb-4 md:mb-0  w-full flex flex-col items-center p-4 shadow-[0_2px_8px_0_rgba(0,0,0,0.10)]">
+        <div
+          data-testid="engineered-for-resilience"
+          className="bg-white md:w-[30%] mb-4 md:mb-0  w-full flex flex-col items-center p-4 shadow-[0_2px_8px_0_rgba(0,0,0,0.10)]">
           <div>
             <svg
               xmlns="http://www.w3.org/2000/svg"

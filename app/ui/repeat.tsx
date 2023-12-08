@@ -1,9 +1,36 @@
+"use client";
 import Image from "next/image";
 import vector from "../assets/Illustration2.png";
+import { useState, useRef, useEffect } from "react";
 
 const Repeat = () => {
+  const [isVisible, setIsVisible] = useState(false);
+  const targetElementRef = useRef<HTMLDivElement | null>(null);
+
+  //Function that checks if element is visible to change state
+  //which inturn triggers style for transitioning
+  const handleScroll = () => {
+    if (targetElementRef.current) {
+      const elementRect = targetElementRef.current.getBoundingClientRect();
+      const elementTop = elementRect.top;
+      const windowHeight = window.innerHeight;
+      if (elementTop < windowHeight) {
+        setIsVisible(true);
+      }
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
-    <section className="md:pt-32 pt-16  flex  mb-20  justify-center">
+    <section
+      ref={targetElementRef}
+      className={`md:pt-32 pt-16  flex  mb-20  justify-center ${
+        isVisible ? "animate-slide-in-up" : ""
+      }`}>
       <div className="w-[90%] flex md:flex-row flex-col justify-between">
         <div className="md:w-1/2 w-full p-4">
           <h1 className=" md:text-4xl text-2xl font-bold font-young text-[#303031]">

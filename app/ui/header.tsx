@@ -1,7 +1,27 @@
+"use client";
+import { useState } from "react";
+
 const Header = () => {
+  const [dropped, setDropped] = useState<boolean>(false);
+
+  const displayDropdown = () => {
+    if (!dropped) {
+      setDropped(true);
+    }
+  };
+
+  const closeDropdown = () => {
+    if (dropped) {
+      setDropped(false);
+    }
+  };
   return (
-    <header className="w-full flex justify-between  md:px-12 px-4 fixed bg-white md:py-10 py:6 md:mb-28 mb-16 z-20 ">
-      <div className="flex w-[35%] items-center ">
+    <header
+      className={`w-full flex justify-between md:px-12 px-4 fixed bg-white md:py-10 py:6 md:mb-28 mb-16 z-20 ${
+        dropped ? "animate-drop  flex-row" : "flex-row"
+      }`}>
+      {/* Hide this logo on small screens when dropdown button is clicked */}
+      <div className={`flex w-[35%] items-center ${dropped ? "hidden" : ""}`}>
         <div>
           <svg
             className="md:h-26 md:w-20 h-14 w-14 "
@@ -50,21 +70,55 @@ const Header = () => {
         </button>
       </nav>
 
-      <button className="bg-transparent border-none md:hidden">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke-width="1.5"
-          stroke="currentColor"
-          className="w-6 h-6">
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            d="M3.75 9h16.5m-16.5 6.75h16.5"
-          />
-        </svg>
-      </button>
+      <div
+        className={`flex bg-white mt-8 flex-col  w-[80%]  p-4 justify-evenly ${
+          !dropped ? "hidden" : "block"
+        }`}>
+        <nav className="font-fig  text-base flex flex-col  justify-around text-[#303031]">
+          <button className="border-none bg-none pb-6">
+            Why Open Enterprise
+          </button>
+          <button className="border-none bg-none pb-6">Features</button>
+          <button className="border-none bg-none pb-6">Contribute</button>
+          <button className="border-none bg-none pb-6 text-[#71A894]">
+            Request Early Access
+          </button>
+        </nav>
+      </div>
+
+      <div className={`${dropped ? "h-full pt-4" : ""}`}>
+        <button className="bg-transparent mt-3 md:hidden">
+          <svg
+            onClick={displayDropdown}
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            className={`w-6 h-6 ${dropped ? "hidden" : ""}`}>
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M3.75 9h16.5m-16.5 6.75h16.5"
+            />
+          </svg>
+
+          <svg
+            onClick={closeDropdown}
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            strokeWidth="1.5"
+            stroke="currentColor"
+            className={`w-6 h-6 ${!dropped ? "hidden" : ""}`}>
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M6 18L18 6M6 6l12 12"
+            />
+          </svg>
+        </button>
+      </div>
     </header>
   );
 };

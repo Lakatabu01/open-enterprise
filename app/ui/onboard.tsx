@@ -1,10 +1,36 @@
+"use client";
 import Jassir from "../assets/Jassir.png";
 import Image from "next/image";
+import { useState, useRef, useEffect } from "react";
 
 const Onboard = () => {
+  const [isVisible, setIsVisible] = useState(false);
+  const targetElementRef = useRef<HTMLDivElement | null>(null);
+
+  //Function that checks if element is visible to change state
+  //which inturn triggers style for transitioning
+  const handleScroll = () => {
+    if (targetElementRef.current) {
+      const elementRect = targetElementRef.current.getBoundingClientRect();
+      const elementTop = elementRect.top;
+      const windowHeight = window.innerHeight;
+      if (elementTop < windowHeight) {
+        setIsVisible(true);
+      }
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
-    <section className="w-full flex justify-center ">
-      <div className="w-[90%] py-20 flex md:flex-row flex-col justify-between items-center">
+    <section ref={targetElementRef} className="w-full flex justify-center ">
+      <div
+        className={`w-[90%] py-20 flex md:flex-row flex-col justify-between items-center ${
+          isVisible ? "animate-slide-in-right" : ""
+        }`}>
         <div className="border-4 rounded-2xl md:w-[40%] w-full border-[#303031] p-4 font-space">
           <div className="flex items-center mb-8 ">
             <div>

@@ -3,7 +3,7 @@ import picture from "../assets/Illustration.png";
 
 const Intro = () => {
   return (
-    <section className="pt-36 md:pl-28 px-3 md:px-0 flex md:flex-row flex-col items-center  mb-20">
+    <section className="pt-36 md:pl-28 px-3 md:px-0 flex md:flex-row flex-col items-center  mb-20 animate-slide-in-down">
       <div className=" md:w-[40%] w-full">
         <h1 className=" md:text-6xl text-2xl font-bold font-young text-[#303031]">
           A new model for open collaboration
