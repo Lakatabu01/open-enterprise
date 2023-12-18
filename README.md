@@ -3,6 +3,7 @@
 Welcome to Open Enterprise, a captivating and innovative landing page crafted by Lanre. 
 
 Overview
+
 Open Enterprise is a showcase of modern web development, seamlessly blending the power of TypeScript, JavaScript, and the finesse of Tailwind CSS. This landing page faithfully mirrors the design from its Figma file, providing a visually engaging and user-friendly experience.
 
 Features
@@ -30,7 +31,7 @@ npm start
 Open Enterprise will be available at http://localhost:3000 in your browser.
 
 Live Demo
-Check out the live demo of Open Enterprise here - open-enterprise-lakatabu01.vercel.app
+Check out the live demo of Open Enterprise here - https://open-enterprise-lakatabu01.vercel.app
 
 Here is a link to the figma file - https://t.co/bfk0z3HYTi
 Development: Crafted with love and passion by [Lanre].
